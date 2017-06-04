@@ -1,7 +1,7 @@
 +++
 tags = ""
-topics = ""
-image = "/images/thumbs/0.jpg" #optional image - "/img/about-bg.jpg" is the default
+categories = ""
+image = "/images/thumbs/0.jpg" #set a picture, or randomly select one in the folder images/thumbs
 draft = true
 comments = true
 toc = true

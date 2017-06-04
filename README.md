@@ -42,7 +42,7 @@ disqusShortname = "" #delete or comment to disable Disqus comments
   url = "https://github.com/mjyi"
 [[params.social]]
   title = "RSS"
-  url = ""
+  url = "" #default index.xml
 
 
 [[menu.main]]
@@ -58,4 +58,23 @@ disqusShortname = "" #delete or comment to disable Disqus comments
   url = "/about"
   weight = -160
 ```
+
+**Post Detail Configuration**
+
+in archetypes/post.md
+
+```
++++
+tags = ""
+categories = ""
+image = "/images/thumbs/0.jpg" #set a picture, or randomly select one in the folder images/thumbs
+draft = true
+comments = true
+toc = true
+author = ""
+author_url = ""
++++
+
+```
+
 
