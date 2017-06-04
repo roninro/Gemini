@@ -4,15 +4,15 @@
 name = "Simple"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
+description = "Blog theme for Hugo, Base on Pinghsu Theme."
 homepage = "http://siteforthistheme.com/"
-tags = []
+tags = ["blog"]
 features = []
 min_version = "0.20.7"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "mjyi"
+  homepage = "https://github.com/mjyi"
 
 # If porting an existing theme
 [original]
