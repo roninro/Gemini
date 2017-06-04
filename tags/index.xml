@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Hugo Theme Gemini</title>
+    <link>http://blog.itxuz.com/Gemini/tags/</link>
+    <description>Recent content in Tags on Hugo Theme Gemini</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.itxuz.com/Gemini/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development</title>
+      <link>http://blog.itxuz.com/Gemini/tags/development/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.itxuz.com/Gemini/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gemini</title>
+      <link>http://blog.itxuz.com/Gemini/tags/gemini/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.itxuz.com/Gemini/tags/gemini/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>http://blog.itxuz.com/Gemini/tags/go/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.itxuz.com/Gemini/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>http://blog.itxuz.com/Gemini/tags/golang/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.itxuz.com/Gemini/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://blog.itxuz.com/Gemini/tags/hugo/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.itxuz.com/Gemini/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Templates</title>
+      <link>http://blog.itxuz.com/Gemini/tags/templates/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.itxuz.com/Gemini/tags/templates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theme</title>
+      <link>http://blog.itxuz.com/Gemini/tags/theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.itxuz.com/Gemini/tags/theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Themes</title>
+      <link>http://blog.itxuz.com/Gemini/tags/themes/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.itxuz.com/Gemini/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

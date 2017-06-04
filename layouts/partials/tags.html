@@ -1,7 +1,0 @@
-{{ if .Params.tags }}
-<p class="post-tags"> 
-	{{ range .Params.tags }}
-	<a href="/tags/{{ urlize . }}">{{ . }}</a>
-	{{ end }}
-</p>
-{{ end }}
