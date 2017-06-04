@@ -1,0 +1,24 @@
+{{ partial "header.html" .}}
+
+<body class="bg-grey" gtools_scp_screen_capture_injected="true">
+    {{ partial "navbar.html" . }}
+    <div class="main-content page-page">
+        <div class="search-page">
+            <div class="search-tags">
+                
+                <h1>👇 {{ .Title }}! </h1>
+                <br>
+                <br>
+                {{ $data := .Data }}
+                {{ range $key, $value := .Data.Terms.ByCount }}
+                <a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}" class=" bg-white">
+                    # {{ $value.Name | title }}({{ $value.Count }})
+                </a>                
+                {{ end }}
+                <br>
+                <br>
+                <div class="search-tags-hr bg-deepgrey"></div>
+            </div>
+        </div>
+    </div>
+    {{ partial "footer.html" . }}

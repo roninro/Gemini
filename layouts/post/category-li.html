@@ -1,0 +1,15 @@
+<div class="post-list-item">
+    <div class="post-list-item-container ">
+        <div class="item-label ">
+            <div class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+            <div class="item-meta clearfix">
+                <!--随机选择一个图标-->
+                {{ $icos := shuffle (slice "book" "note" "chat" "code" "image" "web" "link" "design" "lock") }} 
+                {{range first 1 $icos }}
+                <div class="item-meta-ico bg-ico-{{ . }}" style="background: url({{ $.Site.BaseURL }}/images/bg-ico.png) no-repeat;background-size: 40px auto;"></div>
+                {{ end }}
+                <div class="item-meta-date"> {{ .Date.Format "Jan 2, 2006" }} </div>
+            </div>
+        </div>
+    </div>
+</div>

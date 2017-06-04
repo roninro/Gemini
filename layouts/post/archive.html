@@ -1,0 +1,11 @@
+
+    <div class="post-list-item">
+        <div class="post-list-item-container">
+            <div class="item-label">
+                <div class="item-title"><a href="{{ .Permalink }}">{{ .Title }} {{ if .GetParam "draft"}}：：DRAFT{{end}}</a></div>
+                <div class="item-meta clearfix">
+                    <div class="item-meta-date"> {{ .Date.Format "Jan 2, 2006" }} </div>
+                </div>
+            </div>
+        </div>
+    </div>

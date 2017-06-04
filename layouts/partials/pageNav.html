@@ -1,0 +1,29 @@
+{{ $pag := $.Paginator }} 
+{{ if gt $pag.TotalPages 1 }}
+<div class="lists-navigator clearfix">
+    <ol class="page-navigator">
+        {{ if $pag.HasPrev }}
+        <li class="prev"> <a href="{{ $pag.Prev.URL }}">上一页</a></li>
+        {{ end }} 
+        {{ range $pag.Pagers }} 
+        {{ if eq . $pag }}
+        <span class="pagination-number"> 第 {{ .PageNumber }} 页 / 共 {{ .TotalPages }} 页 </span> 
+        {{ end }} 
+        {{ end }} 
+        {{ if $pag.HasNext }}
+        <li class="next"><a href="{{ $pag.Next.URL }}">下一页</a>
+        </li>
+        {{ end }}
+    </ol>
+</div>
+{{ end }}
+<!-- {{ with $pag.First }}
+        <li>
+            <a href="{{ .URL }}" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        {{ end }} -->
+<!-- {{ with $pag.Last }}
+        <li>
+            <a href="{{ .URL }}" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        {{ end }} -->

@@ -1,0 +1,17 @@
+{{ partial "header.html" .}}
+
+<body class="bg-grey" gtools_scp_screen_capture_injected="true">
+{{ partial "navbar.html" . }}
+<div class="main-content index-page clearfix ">
+    <div class="post-lists">
+        <div class="post-lists-body">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ range $paginator.Pages }}
+        {{ .Render "summary"}}
+        {{ end }}
+        </div>
+    </div>
+    {{ partial "pageNav.html" . }}
+</div>
+
+{{ partial "footer.html" . }}

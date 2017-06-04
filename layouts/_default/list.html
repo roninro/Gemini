@@ -1,0 +1,16 @@
+{{ partial "header.html" .}}
+
+<body class="bg-grey" gtools_scp_screen_capture_injected="true">
+    {{ partial "navbar.html" . }}
+    <div class="main-content archive-page clearfix">
+        <div class="categorys-item">
+            {{ range .Data.Pages.GroupByDate "2006" }}
+            <div class="categorys-title">{{ .Key }}</div>
+            <div class="post-lists">
+                {{ range .Pages }} {{ .Render "archive"}} {{ end }}
+            </div>
+            
+            {{ end }}
+        </div>
+    </div>
+    {{ partial "footer.html" . }}

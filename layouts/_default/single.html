@@ -1,0 +1,55 @@
+{{ partial "header.html" .}}
+
+<body class="bg-white" gtools_scp_screen_capture_injected="true">
+    {{ partial "navbar.html" . }}
+    <article class="main-content page-page">
+        <div class="post-header">
+            <h1 class="post-title" itemprop="name headline">
+                {{ .Title }}
+            </h1>
+            <div class="post-data">
+                Published on {{ .Date.Format "Jan 2, 2006" }} ,{{ .ReadingTime }} min reading time
+            </div>
+        </div>
+        <div id="post-content" class="post-content">
+            {{ partial "tags.html" . }} {{ .Content }}
+            <p class="post-info">
+                本文由
+                {{ if .Params.Author }}
+                <a href="{{ .Params.Author_url }}"> 
+                    {{ .Params.Author }}
+                {{ else }}
+                    <a href="{{ .Site.BaseURL }}/about">
+                {{ .Site.Params.Author }} 
+                
+                {{end }}</a> 创作，采用
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">知识共享署名4.0</a>                
+                国际许可协议进行许可，转载请注明出处！<br>
+            </p>
+        </div>
+    </article>
+
+    <div id="post-bottom-bar" class="post-bottom-bar">
+        <div class="bottom-bar-inner">
+            <div class="bottom-bar-items social-share left">
+                <span class="bottom-bar-item">Share : </span>
+                <span class="bottom-bar-item bottom-bar-facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" title="{{ .Title}}" rel="nofollow">Facebook</a></span>
+                <span class="bottom-bar-item bottom-bar-twitter"><a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank" title="{{ .Title }}" rel="nofollow">Twitter</a></span>
+                <span class="bottom-bar-item bottom-bar-weibo"><a href="http://service.weibo.com/share/share.php?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" title="{{ .Title }}" rel="nofollow">Weibo</a></span>
+                <span class="bottom-bar-item bottom-bar-qrcode"><a href="//pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url={{ .Permalink }}" target="_blank" rel="nofollow">QRcode</a></span>
+            </div>
+
+            <div class="bottom-bar-items right">
+                {{if .Prev }}
+                <span class="bottom-bar-item"><a href="{{.Prev.Permalink}}" title="{{ .Prev.Title }}">←</a></span> {{end}}
+                {{if .Next }}
+                <span class="bottom-bar-item"><a href="{{.Next.Permalink}}" title="{{ .Next.Title }}">→</a></span> {{end}}
+                <span class="bottom-bar-item"></span> <span class="bottom-bar-item"><a href="#footer">↓</a></span>
+                <span class="bottom-bar-item"><a href="#">↑</a></span>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- comments -->
+{{ partial "comments.html" . }} {{partial "footer.html" . }}

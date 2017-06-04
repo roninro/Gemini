@@ -1,0 +1,35 @@
+<div class="post-list-item">
+    <div class="post-list-item-container">
+        {{ if .Params.image }}
+            <div class="item-thumb bg-deepgrey" style="background-image:url({{ .Params.image }});"></div>
+
+        {{ else }}
+            <!--{{ shuffle (seq 1 5) }}-->
+            {{ $images := shuffle (seq 0 9) }}
+            {{ range first 1 $images }}            
+
+                <div class="item-thumb bg-deepgrey" style="background-image:url(/images/thumbs/{{ . }}.jpg);"></div>
+            {{ end }}
+            {{ end }}
+        <a href="{{ .Permalink }}">
+            <div class="item-desc">
+                <p>{{ .Summary }} </p>
+            </div>
+        </a>
+        <div class="item-slant reverse-slant bg-deepgrey"></div>
+        <div class="item-slant"></div>
+        <div class="item-label">
+            <div class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+            <div class="item-meta clearfix">
+                <!--随机选择一个图标-->
+                {{ $icos := shuffle (slice "book" "note" "chat" "code" "image" "web" "link" "design" "lock") }} 
+                {{range first 1 $icos }}
+                <div class="item-meta-ico bg-ico-{{ . }}" style="background: url({{ $.Site.BaseURL }}/images/bg-ico.png) no-repeat;background-size: 40px auto;"></div>
+                {{ end }} 
+                {{ range .Params.categories }}
+                <div class="item-meta-cat"><a href="/categories/{{ urlize . }}">{{ . }}</a></div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>

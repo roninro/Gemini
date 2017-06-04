@@ -1,0 +1,18 @@
+ {{ partial "header.html" .}}
+
+<body class="bg-grey" gtools_scp_screen_capture_injected="true">
+{{ partial "navbar.html" . }}
+<div class="main-content common-page clearfix ">
+<div class="common-item">
+    <div class="common-title"> Category : {{ .Title }} </div>
+    <div class="post-lists">
+        <div class="post-lists-body">
+
+        {{ range .Pages }} {{ .Render "category-li"}} {{ end }}
+
+        </div>
+    </div>
+</div>
+</div>
+
+{{ partial "footer.html" . }}

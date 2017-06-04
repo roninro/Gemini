@@ -1,0 +1,50 @@
+baseurl = "http://blog.itxuz.com/"
+title = "深歌浅醉"
+canonifyurls = true
+paginate = 15
+languageCode = "en-us"
+copyright = "Copyright (c) 2015 - 2017. All Rights Reserved."
+MetaDataFormat = "yaml"
+theme = "Gemini"
+googleAnalytics = "UA-97310918-1" # delete or comment to disable Google Analytics JS generation
+disqusShortname = "mjyi-io" #delete or comment to disable Disqus comments
+
+
+[params]
+  Description = "You want something. Go get it!"
+  Keywords = "独立博客,程序员,读书笔记,技术分享,iOS"
+  Author = "浅浅浅"
+  email = "itxuz@itxuz.com"
+  cloudTieKey = "40d2eda1e745418b9ea333c412277b14" #网易云跟帖 key
+  recentPostCount = 7
+
+[[params.social]]
+  title = "rss"
+  url = ""   # 不需要设置
+[[params.social]]
+  title = "github"
+  url = "https://github.com/mjyi"
+
+[[menu.main]]
+  name = "归档"
+  url = "/post/"
+  weight = -200
+[[menu.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = -180
+[[menu.main]]
+  name = "关于"
+  url = "/about"
+  weight = -160
+[[menu.main]]
+  name = "科学上网"
+  url = ""
+  weight = -140
+
+[[params.links]]
+  title = "Github"
+  url = "https://github.com/mjyi"
+[[params.links]]
+  title = "科学上网"
+  url = "http://itxuz.com/"
