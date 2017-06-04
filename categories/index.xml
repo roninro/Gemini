@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hugo Theme Gemini</title>
-    <link>http://blog.itxuz.com/Gemini/categories/</link>
+    <link>https://mjyi.github.io/Gemini/categories/</link>
     <description>Recent content in Categories on Hugo Theme Gemini</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://blog.itxuz.com/Gemini/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mjyi.github.io/Gemini/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>http://blog.itxuz.com/Gemini/categories/development/</link>
+      <link>https://mjyi.github.io/Gemini/categories/development/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.itxuz.com/Gemini/categories/development/</guid>
+      <guid>https://mjyi.github.io/Gemini/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://blog.itxuz.com/Gemini/categories/golang/</link>
+      <link>https://mjyi.github.io/Gemini/categories/golang/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.itxuz.com/Gemini/categories/golang/</guid>
+      <guid>https://mjyi.github.io/Gemini/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>http://blog.itxuz.com/Gemini/categories/hugo/</link>
+      <link>https://mjyi.github.io/Gemini/categories/hugo/</link>
       <pubDate>Sun, 24 Apr 2016 02:50:28 +0200</pubDate>
       
-      <guid>http://blog.itxuz.com/Gemini/categories/hugo/</guid>
+      <guid>https://mjyi.github.io/Gemini/categories/hugo/</guid>
       <description></description>
     </item>
     
