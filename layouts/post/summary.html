@@ -5,7 +5,7 @@
 
         {{ else }}
             <!--{{ shuffle (seq 1 5) }}-->
-            {{ $images := shuffle (seq 0 9) }}
+            {{ $images := shuffle (seq 0 99) }}
             {{ range first 1 $images }}            
 
                 <div class="item-thumb bg-deepgrey" style="background-image:url(/images/thumbs/{{ . }}.jpg);"></div>
