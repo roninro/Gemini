@@ -25,12 +25,11 @@ languageCode = "en-us"
 MetaDataFormat = "yaml"
 theme = "Gemini"
 googleAnalytics = "" # delete or comment to disable Google Analytics JS generation
-disqusShortname = "" #delete or comment to disable Disqus comments
+disqusShortname = "mjyi-io" #delete or comment to disable Disqus comments
 
 [params]
   Keywords = ""
   Author = "Gemini"
-  cloudTieKey = "" #delete or comment to disable gentie.163 comments
   recentPostCount = 7
   intro = ["I am a iOS Developer", "Work in Hangzhou"]
 

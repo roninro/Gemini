@@ -1,25 +1,9 @@
-{{ if (.Site.Params.CloudTieKey) or (.Site.Params.DisqusShortname) }} 
 {{ if .Params.Comments }}
 <div class="comment-container">
     <div id="comments" class="clearfix">
-        <!-- <span class="response">Comments</span> -->
-        {{ if .Site.Params.CloudTieKey }}
-        <div style="margin-bottom: 1em">
-            <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-        </div>
-        <script>
-        var cloudTieConfig = {
-            url: document.location.href,
-            sourceId: "",
-            productKey: "40d2eda1e745418b9ea333c412277b14",
-            target: "cloud-tie-wrapper"
-        };
-        </script>
-        <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-        {{ else if .Site.DisqusShortname }} 
+        {{ if .Site.DisqusShortname }} 
         {{ template "_internal/disqus.html" . }} 
         {{ end }}
     </div>
 </div>
-{{ end }}
 {{ end }}
